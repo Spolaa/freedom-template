@@ -8,6 +8,7 @@ License: [MIT](https://github.com/Spolaa/freedom-template/blob/master/LICENSE)
 ### Used framework
 
 - Bootstrap 4 [Site](https://v4-alpha.getbootstrap.com/) - [License](https://github.com/twbs/bootstrap/blob/master/LICENSE)
+- Popper [Site](https://popper.js.org/) - [License](https://github.com/FezVrasta/popper.js/blob/master/LICENSE.md)
 - Google Fonts [Site](https://fonts.google.com/) - [Licens](https://fonts.google.com/attribution)
 - Font Awesome [Site](http://fontawesome.io/) - [License](http://fontawesome.io/license/)
 - Ionicons [Site](http://ionicons.com/) - [License](https://github.com/ionic-team/ionicons/blob/master/LICENSE)
