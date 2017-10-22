@@ -47,6 +47,6 @@ For background there are four option for transition. Simple to use thanks to cla
 - full screen left: ```<div class="loader-section section-left"></div>```
 - full screen right: ```<div class="loader-section section-right"></div>```
 - full screen top: ```<div class="loader-section section-top"></div>```
-- full screen bottom: ```<div class="loader-section section-x-bottom"></div>```
+- full screen bottom: ```<div class="loader-section section-bottom"></div>```
 
 The transaction of background is defined by js (/assets/js/main.js). In document ready there is a *setTimeout* after 3s (3000) that add class *loaded* to body.
