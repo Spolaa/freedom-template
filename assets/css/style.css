@@ -1,0 +1,298 @@
+/* Main customizable style of Freedom Template
+ *
+ * Author: Stefano Gagliardi
+ * License: MIT
+ * Documentation and repository: https://github.com/Spolaa/freedom-template
+ *
+ * Media queries are located in /assets/css/media.css
+ */
+
+/*
+ * File index
+ */
+
+/* 1. External resources */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+/* font-family: 'Raleway', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic');
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Spectral:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i');
+/* font-family: 'Spectral', serif */
+
+/* 2. Global */
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+
+}
+
+/* 3. Loader (1) */
+
+#loader-wrapper-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+/* loader animation component */
+#loader { /* intern line */
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+
+    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+
+    z-index: 1001;
+}
+
+    #loader:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #e74c3c;
+
+        -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+        animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #f9c922;
+
+        -webkit-animation: spin 1.5s linear infinite;
+        animation: spin 1.5s linear infinite;
+    }
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+/* section loader animation component */
+
+#loader-wrapper-1 .loader-section {
+    position: fixed;
+    background: #222222;
+
+    -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(0);  /* IE 9 */
+    transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+
+    z-index: 1000;
+}
+
+#loader-wrapper-1 .loader-section.section-x-left {
+    top: 0;
+    left: 0;
+    width: 51%;
+    height: 100%;
+}
+
+#loader-wrapper-1 .loader-section.section-x-right {
+    top: 0;
+    right: 0;
+    width: 51%;
+    height: 100%;
+}
+
+#loader-wrapper-1 .loader-section.section-y-top {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 51%;
+}
+
+#loader-wrapper-1 .loader-section.section-y-bottom {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 51%;
+}
+
+#loader-wrapper-1 .loader-section.section-left {
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#loader-wrapper-1 .loader-section.section-right {
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#loader-wrapper-1 .loader-section.section-top {
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#loader-wrapper-1 .loader-section.section-bottom {
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Loaded class add to body*/
+/* from center to left (-100 x axis) */
+.loaded #loader-wrapper-1 .loader-section.section-x-left {
+    -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(-100%);  /* IE 9 */
+    transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+    /* Box transition*/
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+/* from center to right (+100 x axis) */
+.loaded #loader-wrapper-1 .loader-section.section-x-right {
+    -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(100%);  /* IE 9 */
+    transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+
+    /* Box transition*/
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+/* from center to top (?? y axis) */
+.loaded #loader-wrapper-1 .loader-section.section-y-top {
+    -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateY(-100%);  /* IE 9 */
+    transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+    /* Box transition*/
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+/* from center to bottom (?? y axis) */
+.loaded #loader-wrapper-1 .loader-section.section-y-bottom {
+    -webkit-transform: translateY(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateY(100%);  /* IE 9 */
+    transform: translateY(100%);  /* Firefox 16+, IE 10+, Opera */
+
+    /* Box transition*/
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+/* from right to left (+100 -> -100 x axis) */
+.loaded #loader-wrapper-1 .loader-section.section-left {
+    -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(-100%);  /* IE 9 */
+    transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+    /* Box transition*/
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+/* from right to left (-100 -> +100 x axis) */
+.loaded #loader-wrapper-1 .loader-section.section-right {
+    -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(100%);  /* IE 9 */
+    transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+
+    /* Box transition*/
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+/* from bottom to top (?? Y axis) */
+.loaded #loader-wrapper-1 .loader-section.section-top {
+    -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateY(-100%);  /* IE 9 */
+    transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+    /* Box transition*/
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+/* from bottom to top (?? Y axis) */
+.loaded #loader-wrapper-1 .loader-section.section-bottom {
+    -webkit-transform: translateY(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateY(100%);  /* IE 9 */
+    transform: translateY(100%);  /* Firefox 16+, IE 10+, Opera */
+
+    /* Box transition*/
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader {
+    opacity: 0;
+
+    /* shade out */
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+
+    /*
+     * leave from screen
+     * TODO: Remove html with js
+     */
+    -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateY(-100%);  /* IE 9 */
+    transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+    /* shade out */
+    -webkit-transition: all 0.3s 1s ease-out;
+    transition: all 0.3s 1s ease-out;
+}
