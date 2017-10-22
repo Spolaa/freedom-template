@@ -6,6 +6,8 @@ Author: 95stefano.gagliardi@gmail.com</br>
 License: [MIT](https://github.com/Spolaa/freedom-template/blob/master/LICENSE)</br>
 [Documentation](https://github.com/Spolaa/freedom-template/blob/master/DOCUMENTATION.md)
 
+Try demo here ! [Demo](http://www.spola.net/freedom)
+
 ### Used framework
 
 - Bootstrap 4 [Site](https://v4-alpha.getbootstrap.com/) - [License](https://github.com/twbs/bootstrap/blob/master/LICENSE)
