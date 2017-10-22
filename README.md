@@ -3,7 +3,8 @@ This repository is a html5 / CSS3 landing page with login and signup forms. Home
 
 Version: 0.1.0. </br>
 Author: 95stefano.gagliardi@gmail.com</br>
-License: [MIT](https://github.com/Spolaa/freedom-template/blob/master/LICENSE)
+License: [MIT](https://github.com/Spolaa/freedom-template/blob/master/LICENSE)</br>
+[Documentation](https://github.com/Spolaa/freedom-template/blob/master/DOCUMENTATION.md)
 
 ### Used framework
 
@@ -20,10 +21,14 @@ License: [MIT](https://github.com/Spolaa/freedom-template/blob/master/LICENSE)
 - jQuery Validation [Site](https://jqueryvalidation.org/) - [Licens](https://github.com/jquery-validation/jquery-validation/blob/master/LICENSE.md)
 - PhpMailer [Site](https://github.com/PHPMailer/PHPMailer) - [License](https://github.com/PHPMailer/PHPMailer/blob/master/LICENSE)
 
+### External resources
+- Images from [Unsplash](https://unsplash.com/) and [Placeholder](https://placeholder.com/)
+
 ### How to contribute
 
 If you have idea to improve template: feauture, bug, optimize etc. Please make code and commit.
 Have a bug or issue with this template? [Open a new issue](https://github.com/Spolaa/freedom-template/issues) here on GitHub.
+
 ## Main works
 
 Here a list of main features that are implemented. Below the relative documentation.
