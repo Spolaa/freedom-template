@@ -39,14 +39,14 @@ Three line of loader icon are just one div. Are three thanks to pseudo-element :
 
 For background there are four option for transition. Simple to use thanks to class:
 - split screen horizontally:
-    - .section-x-left
-    - .section-x-right
+    - <div class="loader-section section-x-left"></div>
+    - <div class="loader-section section-x-right"></div>
 - split screen vertically:
-    - .section-y-top
-    - .section-y-bottom
-- full screen left: .section-left
-- full screen right: .section-right
-- full screen top: .section-top
-- full screen bottom: .section-bottom
+    - <div class="loader-section section-y-top"></div>
+    - <div class="loader-section section-y-bottom"></div>
+- full screen left: <div class="loader-section section-left"></div>
+- full screen right: <div class="loader-section section-right"></div>
+- full screen top: <div class="loader-section section-top"></div>
+- full screen bottom: <div class="loader-section section-x-bottom"></div>
 
 The transaction of background is defined by js (/assets/js/main.js). In document ready there is a *setTimeout* after 3s (3000) that add class *loaded* to body.
