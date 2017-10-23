@@ -13,8 +13,11 @@ Have a mistake or issue between template and documentation? [Open a new issue](h
 - Set list of @media in /assets/css/media.css
 - Create typographi: 4-5 various (google) font
 - Create general css settings (while develop components)
-- Create Navbar
 - Define Colors Sets when SASS is implemented
+
+## Components
+- Navbar
+- Cookie banner
 
 ## Main task - optimization
 - Setting project with SASS
