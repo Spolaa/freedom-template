@@ -10,11 +10,25 @@ Have a mistake or issue between template and documentation? [Open a new issue](h
 
 ## Main task - content
 - Ultimate first version of Adobe XD project and push it. 
+- Set list of @media in /assets/css/media.css
+- Create typographi: 4-5 various (google) font
+- Create general css settings (while develop components)
+- Create Navbar
+- Define Colors Sets when SASS is implemented
 
 ## Main task - optimization
 - Setting project with SASS
+- Resolve Todo write in /assets/css/media.css
 
 ## Plugin
 - Loaders
   - Create other 2 loader css icons.
   - Create class system for velocity of background transition
+  - Create .class feautures
+- Typographi
+  - Use em
+  - Responsive font
+  - Create .class feautures
+- Navbar
+  -
+  - Create .class feautures
