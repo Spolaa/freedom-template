@@ -16,12 +16,13 @@ Have a mistake or issue between template and documentation? [Open a new issue](h
 - Define Colors Sets when SASS is implemented
 
 ## Components
-- Navbar
 - Cookie banner
+- Navbar
 
 ## Main task - optimization
 - Setting project with SASS
 - Resolve Todo write in /assets/css/media.css
+- if use loader background: -y-top -y-bottom. There are  a issue. Resolve TODO style.css at line 298
 
 ## Plugin
 - Loaders
