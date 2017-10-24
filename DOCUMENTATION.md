@@ -19,6 +19,7 @@ Have a mistake or issue between template and documentation? [Open a new issue](h
 ### Index
 
 1. Loader
+2. Cookie banner
 
 ## 1. Loader
 
@@ -50,3 +51,7 @@ For background there are four option for transition. Simple to use thanks to cla
 - full screen bottom: ```<div class="loader-section section-bottom"></div>```
 
 The transaction of background is defined by js (/assets/js/main.js). In document ready there is a *setTimeout* after 3s (3000) that add class *loaded* to body.
+
+## 2. Cookie banner
+
+A banner for cookie privacy policy normative. In the *div-banner*
