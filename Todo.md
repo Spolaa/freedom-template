@@ -29,10 +29,9 @@ Have a mistake or issue between template and documentation? [Open a new issue](h
   - Create other 2 loader css icons.
   - Create class system for velocity of background transition
   - Create .class feautures
+- Cookie banner
+  - add class *animation* (to top) when cookie banner is resolve
 - Typographi
   - Use em
   - Responsive font
-  - Create .class feautures
-- Navbar
-  -
   - Create .class feautures
