@@ -56,10 +56,8 @@ The transaction of background is defined by js (/assets/js/main.js). In document
 
 A banner for cookie privacy policy normative with simple cookie system in js.
 ```html
-    <div id="loader-wrapper-x">
-        <div id="loader"></div>
-
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-    </div>
+    <div id="cookie" class="cookie-banner top accept">
+        <p>Your cookie text <a href="javascript:;">Link to policy</a> lorem ipsum dolor</p>
+        <a href="javascript:;" id="cookie-btn" class="cookie-btn">Accept</a>
+    </div><!-- /#cookie -->
 ```
