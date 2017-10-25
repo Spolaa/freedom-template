@@ -9,7 +9,18 @@
 
 /*
  * File index
+ * 1. External resource
+ * 2. Global
+ * 3. Loader
+ * 4. Cookie banner
+ * X. Helper Class
  */
+
+/* X. Helper Class */
+
+.display-none{
+    display: none;
+}
 
 /* 1. External resources */
 
@@ -33,9 +44,14 @@ body {
 
 }
 
+.test {
+    width: 100%;
+    height: 1000px;
+}
+
 /* 3. Loader (1) */
 
-#loader-wrapper-1 {
+#loader-wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -121,7 +137,7 @@ body {
 
 /* section loader animation component */
 
-#loader-wrapper-1 .loader-section {
+#loader-wrapper .loader-section {
     position: fixed;
     background: #222222;
 
@@ -132,53 +148,53 @@ body {
     z-index: 1000;
 }
 
-#loader-wrapper-1 .loader-section.section-x-left {
+#loader-wrapper .loader-section.section-x-left {
     top: 0;
     left: 0;
     width: 51%;
     height: 100%;
 }
 
-#loader-wrapper-1 .loader-section.section-x-right {
+#loader-wrapper .loader-section.section-x-right {
     top: 0;
     right: 0;
     width: 51%;
     height: 100%;
 }
 
-#loader-wrapper-1 .loader-section.section-y-top {
+#loader-wrapper .loader-section.section-y-top {
     left: 0;
     top: 0;
     width: 100%;
     height: 51%;
 }
 
-#loader-wrapper-1 .loader-section.section-y-bottom {
+#loader-wrapper .loader-section.section-y-bottom {
     right: 0;
     bottom: 0;
     width: 100%;
     height: 51%;
 }
 
-#loader-wrapper-1 .loader-section.section-left {
+#loader-wrapper .loader-section.section-left {
     top: 0;
     width: 100%;
     height: 100%;
 }
 
-#loader-wrapper-1 .loader-section.section-right {
+#loader-wrapper .loader-section.section-right {
     top: 0;
     width: 100%;
     height: 100%;
 }
 
-#loader-wrapper-1 .loader-section.section-top {
+#loader-wrapper .loader-section.section-top {
     top: 0;
     width: 100%;
     height: 100%;
 }
 
-#loader-wrapper-1 .loader-section.section-bottom {
+#loader-wrapper .loader-section.section-bottom {
     top: 0;
     width: 100%;
     height: 100%;
@@ -186,7 +202,7 @@ body {
 
 /* Loaded class add to body*/
 /* from center to left (-100 x axis) */
-.loaded #loader-wrapper-1 .loader-section.section-x-left {
+.loaded #loader-wrapper .loader-section.section-x-left {
     -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateX(-100%);  /* IE 9 */
     transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
@@ -197,7 +213,7 @@ body {
 }
 
 /* from center to right (+100 x axis) */
-.loaded #loader-wrapper-1 .loader-section.section-x-right {
+.loaded #loader-wrapper .loader-section.section-x-right {
     -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateX(100%);  /* IE 9 */
     transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
@@ -208,7 +224,7 @@ body {
 }
 
 /* from center to top (?? y axis) */
-.loaded #loader-wrapper-1 .loader-section.section-y-top {
+.loaded #loader-wrapper .loader-section.section-y-top {
     -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateY(-100%);  /* IE 9 */
     transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
@@ -219,7 +235,7 @@ body {
 }
 
 /* from center to bottom (?? y axis) */
-.loaded #loader-wrapper-1 .loader-section.section-y-bottom {
+.loaded #loader-wrapper .loader-section.section-y-bottom {
     -webkit-transform: translateY(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateY(100%);  /* IE 9 */
     transform: translateY(100%);  /* Firefox 16+, IE 10+, Opera */
@@ -230,7 +246,7 @@ body {
 }
 
 /* from right to left (+100 -> -100 x axis) */
-.loaded #loader-wrapper-1 .loader-section.section-left {
+.loaded #loader-wrapper .loader-section.section-left {
     -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateX(-100%);  /* IE 9 */
     transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
@@ -241,7 +257,7 @@ body {
 }
 
 /* from right to left (-100 -> +100 x axis) */
-.loaded #loader-wrapper-1 .loader-section.section-right {
+.loaded #loader-wrapper .loader-section.section-right {
     -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateX(100%);  /* IE 9 */
     transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
@@ -252,7 +268,7 @@ body {
 }
 
 /* from bottom to top (?? Y axis) */
-.loaded #loader-wrapper-1 .loader-section.section-top {
+.loaded #loader-wrapper .loader-section.section-top {
     -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateY(-100%);  /* IE 9 */
     transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
@@ -263,7 +279,7 @@ body {
 }
 
 /* from bottom to top (?? Y axis) */
-.loaded #loader-wrapper-1 .loader-section.section-bottom {
+.loaded #loader-wrapper .loader-section.section-bottom {
     -webkit-transform: translateY(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateY(100%);  /* IE 9 */
     transform: translateY(100%);  /* Firefox 16+, IE 10+, Opera */
@@ -288,11 +304,45 @@ body {
      * leave from screen
      * TODO: Remove html with js
      */
-    -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -webkit-transform: translate(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateY(-100%);  /* IE 9 */
     transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
 
     /* shade out */
     -webkit-transition: all 0.3s 1s ease-out;
     transition: all 0.3s 1s ease-out;
+}
+
+/*
+ * 4. Cookie banner
+ */
+
+.cookie-banner {
+    position: fixed;
+    width: 100%;
+    background: #eeeeee;
+    text-align: center;
+    padding: 15px 0;
+
+    z-index: 999;
+}
+
+.cookie-banner p {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+}
+
+.cookie-banner a.cookie-btn {
+    padding: 10px 30px;
+    background-color: #333;
+    color: #fff;
+}
+
+.top {
+    top: 0;
+}
+
+.bottom {
+    bottom: 0;
 }
