@@ -63,7 +63,9 @@ A banner for cookie privacy policy normative with simple cookie system in js.
 ```
 The main containe is *.cookie-banner* inside you can insert your content. The are two options for banner position: *.top* or *.bottom* </br>
 
-In file main.js there three methods for cookies: *setCookie, getCookie, eraseCookie*. The variables for these function are in the cookie section. The main feautures are:</br>
+In file main.js there three methods for cookies: *setCookie, getCookie, eraseCookie*. The variables for these function are in the cookie section. The functions are explained with comment in the js file.
+
+The main feautures are:</br>
 - On window load *getCookie* check if cookie exist add class *.display-none* to cookie banner
 - In div *#cookie* you can choose between three class options if cookie doesn't exist:
     - *.always* Cookie come create anyhow
