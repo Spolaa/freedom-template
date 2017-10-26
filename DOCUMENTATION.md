@@ -72,4 +72,6 @@ The main feautures are:</br>
     - *.on-scroll* Cookie name come create just user navigate or scroll page
     - *.accept* Cookie come create just user click button. Required a button with id *#cookie-btn*
     
+If you need to delet cookie and create new there is a js mehtod: *eraseCookie*. Just invoke before method *setCookie*.
+    
 ## Navbar
