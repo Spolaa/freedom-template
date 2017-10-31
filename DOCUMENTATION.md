@@ -1,7 +1,8 @@
 # Documentation
 
-In this file is report the complete documentation about Freedom Template components.
-Really simple to understand, use, modify.
+In this file is report the complete documentation about Freedom Template components. The template is based on Bootstrap v.4 so a lot of helper function take from this one.
+
+Really simple to understand, use and modify.
 
 Version: 0.1.0. </br>
 Author: 95stefano.gagliardi@gmail.com</br>
@@ -56,14 +57,19 @@ The transaction of background is defined by js (/assets/js/main.js). In document
 
 A banner for cookie privacy policy normative with simple cookie system in js.
 ```html
-    <div id="cookie" class="cookie-banner top accept">
-        <p>Your cookie text <a href="#">Link to policy</a> lorem ipsum dolor</p>
-        <a href="javascript:;" id="cookie-btn" class="cookie-btn">Accept</a>
+<div id="cookie" class="cookie-banner fixed-bottom accept">
+    <div class="container">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <p>Your cookie text <a href="javascript:;" class="link">Link to policy</a> lorem ipsum dolor</p>
+            <a id="cookie-btn" class="cookie-btn">Accept</a>
+        </div>
     </div>
-```
-The main containe is *.cookie-banner* inside you can insert your content. The are two options for banner position: *.top* or *.bottom* </br>
+</div>
 
-In file main.js there three methods for cookies: *setCookie, getCookie, eraseCookie*. The variables for these function are in the cookie section. The functions are explained with comment in the js file.
+```
+The main containe is *.cookie-banner* and strucutre is that bootstrap default (container and col). Inside you can insert your content. The are two options for banner position: *.fixed-top* or *.fixed-bottom* </br>
+
+In file main.js there three methods for cookies: *setCookie, getCookie, eraseCookie*. The variables for these function are in the cookie section of main.js. The functions and params are explained with in the js file.
 
 The main feautures are:</br>
 - On window load *getCookie* check if cookie exist add class *.display-none* to cookie banner
@@ -74,4 +80,33 @@ The main feautures are:</br>
     
 If you need to delet cookie and create new there is a js mehtod: *eraseCookie*. Just invoke before method *setCookie*.
     
-## Navbar
+## 3. Navbar
+
+Navigation bar is based on Bootstrap 4 classes so i advice to read official [documentation](https://getbootstrap.com/docs/4.0/components/navbar/).</br>
+Main structure is the follow:
+```html
+<header id="header">
+    <nav class="navbar navbar-expand-md fixed-top opacity-scroll">
+        <div class="container">
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-lable="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a href="#" class="navbar-brand"><img src="/assets/img/220x50.png" alt="brand-name"> </a>
+
+        <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#focus" class="nav-link">Focus</a></li>
+                <li class="nav-item"><a href="#timeline" class="nav-link">Timeline</a></li>
+                <li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+
+        </div><!-- /.container -->
+    </nav>
+</header>
+
+```
