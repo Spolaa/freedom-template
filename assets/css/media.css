@@ -1,0 +1,263 @@
+/* Main customizable responsive media queries of Freedom Template.
+ * Media queries are landscape and portrait both
+ *
+ * Author: Stefano Gagliardi
+ * License: MIT
+ * Documentation and repository: https://github.com/Spolaa/freedom-template
+ *
+ * Media queries are located in /assets/css/media.css
+ */
+
+/*
+ * Index of device supported:
+ * 1. iphone: 4 to X TODO add @media for plus(+) version
+ * 2. galaxy: 4 to 6
+ * 3. iPad 3 - 4 and Pro 9'/12.9' TODO iPad pro 10'
+ * 4. Laptop with Retina screen
+ */
+
+/*
+ * ----------------------------
+ *          Iphone 4
+ * ----------------------------
+ */
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* TODO media queries landscape and potrait iphone4 */
+
+/*
+ * ----------------------------
+ *          Iphone 5
+ * ----------------------------
+ */
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+
+}
+
+/*
+ * ----------------------------
+ *          Iphone 6-7-8
+ * ----------------------------
+ */
+
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+
+}
+
+/*
+ * ----------------------------
+ *          Iphone X
+ * ----------------------------
+ */
+
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+
+}
+
+/*
+ * ----------------------------
+ *       Galaxy S4 - S5
+ * ----------------------------
+ */
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 640px)
+and (-webkit-min-device-pixel-ratio: 3) {
+
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 640px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 640px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape) {
+
+}
+
+/*
+ * ----------------------------
+ *          Galaxy S6
+ * ----------------------------
+ */
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 640px)
+and (-webkit-min-device-pixel-ratio: 4) {
+
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 360px)
+and (max-device-width: 640px)
+and (-webkit-min-device-pixel-ratio: 4)
+and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 360px)
+and (max-device-width: 640px)
+and (-webkit-min-device-pixel-ratio: 4)
+and (orientation: landscape) {
+
+}
+
+/*
+ * ----------------------------
+ *      iPad 3 - 4 - pro 9'
+ * ----------------------------
+ */
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+
+}
+
+/*
+ * ----------------------------
+ *      iPad 3 - 4 - pro 12.9'
+ * ----------------------------
+ */
+
+@media only screen
+and (min-device-width: 1024px)
+and (max-device-width: 1366px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 1024px)
+and (max-device-width: 1366px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 1024px)
+and (max-device-width: 1366px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+
+}
+
+/*
+ * ----------------------------
+ *     Laptop Retina Screen
+ * ----------------------------
+ */
+
+@media only screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (min-resolution: 192dpi) {
+    
+}
