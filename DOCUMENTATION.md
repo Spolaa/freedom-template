@@ -110,3 +110,14 @@ Main structure is the follow:
 </header>
 
 ```
+First of all navbar is composed by two element: Brand and navigation. The first is a link, in this case is a responsive image (img-fluid is a responsive bootstrap 4 class) but you can put there a Heading for instance. The second is a main navigator of your site. Link can scope or in other page or to one section in the current page.
+
+The main feautures are:</br>
+1. Change color or opacity on scroll</br>
+    To add this is very simple just add class *.opacity-scroll* to main *<nav>* and chooce color in the style.css. N.B. There are two near class to change color.
+2. Change size on scroll</br>
+    Like the first just add class *.resize-scroll* to main *<nav>* nad chooce height in style.css
+3. Add box-shadow on scroll
+4. Can be Fixed or not
+5. Active class in real time and autoscrolling
+6. A mix of previous
