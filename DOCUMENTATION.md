@@ -35,7 +35,7 @@ Loader need while page loading. Simple and pretty design animation instead page 
     </div>
 ```
 
-The code above is a default structure of loader. In the *loader-wrapper-x* there are two components. The first *#loader* is loader icon. The second in background animation out. 
+The code above is a default structure of loader. In the *loader-wrapper-x* there are two components. The first *#loader* is loader icon. The second is parts of background animation. Background transiction start when *$(document).ready* , if you prefer in *assets/js/main.js* in the section loader there is helper function where you can set a timeout on transiction.
 
 Three line of loader icon are just one div. Are three thanks to pseudo-element :after and :before. Set those to change size and color and time to animation. The animation is defined as *spin* (infinite), this animation is build with a @keyframe (rotate)
 
